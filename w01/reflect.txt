@@ -1,0 +1,37 @@
+*****************************************************************************
+                              Reflection
+                             Workshop - #1
+Full Name  : Kuldeepsinh Sandipsinh Mahida
+Student ID#: 167547215
+Email      : kmahida1@myseneca.ca
+Section    : NGG
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+Answer 1
+	this workshop has teached me basics of c language and it mostly
+	deals with print function :-
+	
+	1. how to print normal text on the screen.
+	2. how the spacing is managed with the use \t function which lets
+	   us leave space equivalent to clicking tab button.
+	3. how we can use \n to move to next line it is like pressing 
+	   enter key.
+	4. lastly it teaches that to carry out printing of special characters
+	   like \ we have to use \\, to print % we have to type %% and " are printed
+	   by typing \".
+Answer 2
+	SSH is a protocol known as secure shell which is used to create a connection between 
+	computers securely.putty app uses SSH as its base transfer the workshop we created to 
+	our college's server over internet safely by encrypting it.
+	
+Answer 3	
+	SFTP full form is Secure File transfer Protocol which is used to transfer data between 
+	computers securely.WinScp app uses SFTP as its base to transfer the workshop we created 
+	to our college's server with the help of internet.SFTP feels same like SSH.
+	
+	    

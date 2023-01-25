@@ -1,0 +1,60 @@
+*****************************************************************************
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Kuldeepsinh Sandipsinh Mahida
+Student ID#: 167547215
+Email      : kmahida1@myseneca.ca
+Section    : NGG
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+Ans 1
+	the code was sort of repetitive hence it is very hard to point out on
+	one line but there are some stuff which acted as a hindrance like we 
+	were restricted to use number of variables ,the indentation of the
+	required result was very hard because even if we copy and paste it from
+	the example the spacing changes completely and the major problem was that 
+	the user was given the liberty to input answers in both upper and 
+	lower case causing a lot of extra work to be performed but if 
+	I am supposed to mention one line then it is :-
+	"printf("\n 1 |   %d   |   %d   |    %d   |   %d  |  %d |  %0.3lf |   %d   
+	|  %0.1lf | %0.1lf", (typec1 == 'l' || typec1 == 'L'), (typec1 == 'b' || 
+	typec1 == 'B'), (grindsc1 == 'c' || grindsc1 == 'C'), (grindsc1 == 'f' || 
+	grindsc1 == 'F'), bagwc1, (double)(bagwc1 / GRAMS_IN_LBS), (creamc1 == 'y' 
+	|| creamc1 == 'Y'), tc1, ((tc1 * 1.8) + 32.0));"
+	and lastly there was a struggle to compare temperature value which is 
+	stored in double data type and maker type which is stored in character
+	data type and come to a result.
+	
+Ans 2 
+	for instance we take "(typec1 == 'l' || typec1 == 'L')" and we store
+	'l' in typec1. 
+	firstly it will check that is first condition satisfied which is 
+	satisfied and then check whether second condition is satisfied
+	which is not so as one of the value is satisfied we will get true as 
+	answer
+	now we apply de morgans law which states ! (a || b)= (!a) && (!b)
+	 this will yield (a || b) true as stated above (consider a = typec1 == 'l' 
+	and consider b = typec1 == 'L') and its negation yields false
+	and now for other side of equation((!a) && (!b)) a is true but its 
+	negation will yield false and b is false but its negation will yield
+	true.(false)&&(true) yields false.
+ 	
+Ans 3
+	the average of product prices was used for performing some taske like
+ 	"Is the price of product 2 equal to or more than the average price?"
+	hence to perform this comparison we needed the value of average to
+	be stored somewhere however we could have directly printed the above the
+	answer by typing :-
+        printf("Is the price of product 2 equal to or more than the average price 
+	%d",(price2>=((price1+price2+price3)/3)));
+	but as we can see that the condition here gets pretty tedious to write
+	hence we made a variable but we do not need to use farenheit anywhere
+	it is just printed and done and we have to print farenheit 3 times
+	and we would need 3 diff variables to store 3 different conversion of
+	of temperature given in degree celcius whereas we can just print
+	it in print statement directly.
+	 

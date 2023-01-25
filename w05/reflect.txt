@@ -1,0 +1,56 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #5
+Full Name  : Kuldeepsinh Sandipsinh Mahida
+Student ID#: 167547215
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+ANSWER 1
+
+to map the month number taken from user to the first three letter of the month
+can be achieved by two different selection constructs that is if else and switch
+case
+	switch(month)
+	{
+		case 11:
+           		printf("NOV");
+           		break;
+        	case 12:
+                	printf("DEC");
+            		break;
+	}
+variable month input from the user now if user enters 11 then it will print NOV
+
+	if(month==11)
+	{
+		printf("NOV");
+	}
+	if(month==12)
+	{
+		printf("DEC");
+	}
+similar output as above will be yielded.
+
+ANSWER 2
+
+three types of iteration construct are for, while, do while.
+the one used by me in my coding was do while and the reason behind using that is 
+it is entry controlled and would run atleast once and then we change value of flag 
+once the user enters correct input.for cannot be used because number of iterations
+are supposed to be pre defined and we do not know how many tries the user will take
+to enter the values in prescribed range.
+
+ANSWER 3
+
+for semantic error I used multiple printf statements as it helps precisely monitor 
+the changes happening to the variable and it leads to find errors and correct our
+our mistake.
+dry run also is an effective method whhich helps to identify semantic error it helped 
+me identify that i have to make a flag array to for using it make decisions for an array.
+for syntatctic error the computer provides error code which upon searching on google
+gives a appropriate reason for error and there are red indication also in visual studio
+which suggests syntax error.

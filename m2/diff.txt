@@ -1,0 +1,14 @@
+In line number 137 of your output:
+The output should be:
+*** No records found ***
+ ^
+But your output is: 
+* No records found *
+ ^
+
+Unmatched character details:
+The character in column 2 is supposed to be:
+  [*] ASCII code(42)
+but you printed
+  [Space] ASCII code(32)
+

@@ -1,0 +1,76 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #6
+Full Name  : Kuldeepsinh Sandipsinh Mahida
+Student ID#: 167547215
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+Answer 1
+
+parallel arrays gives us a sense of connection between arrays when using them
+and hence they are are very usefull. for instance in this particular workshop
+we were supposed to make a total of values with similar priorities.
+for (i = 0; i < noofitems; i++)
+{
+	if (priority[i] == filter)
+      	{
+          	 prioritytotalcost = prioritytotalcost + cost[i];
+                  if (financing[i] == 'y')
+                  {
+                        flag1 = 0;
+                  }
+        }
+}
+here filter stores the value of the priority we need to make total cost off. both 
+priority[] and cost[] array are independent arrays but the values are linked 
+for example if priority is (1) of 2 diff elements then we will add those two 
+different elements cost stored in diffrent array but at same index numbers hence the 
+value of i will be same for both making it easy for us to do it in once with just one 
+loop.
+
+Answer 2
+
+the reason behind iterating loop from zero is because the index numbers in array start
+from zero.
+
+for (i = 0; i < noofitems; i++)
+{
+	if (priority[i] == filter)
+      	{
+          	 prioritytotalcost = prioritytotalcost + cost[i];
+                  if (financing[i] == 'y')
+                  {
+                        flag1 = 0;
+                  }
+        }
+}
+if the size of array is 3 then it will have 3 places but its address (index number) will 
+be 0 , 1 and 2 so to get value of first element we have to enter zero in index number.
+hence we start the loop from zero and because we start it from zero we run it it till
+one less then array length.
+here in the loop it is evident that we start from zero and the value of i is given in 
+index number of various arrays.
+
+
+Answer 3
+
+I will tell the child that array is similar to a book shelf in which we can store just
+one book per compartment of book shelf.
+now because it is a book shelf we can just put books into it .i will tell this to explain
+that similar things (values) can only be stored in a array. to tell for data type i will
+explain the child that now to put clothes we need a wardrobe and cannot put in book shelf
+so in a similar fashion we need to tell array first what we are going to store into it.
+
+now going back to our original example of book shelf where each compartment can only store 
+a book. now if we have 15 books we need to order a compartment which has fifteen shelfs
+but the manufacturer starts naming from zero instead of one hence the shelfs are numbered from 
+from 0 - 14 and not from 1 - 15.
+
+to make the child practice i will tell the child i have 15 books numbered from 1 to 15
+and put in the shelf from 0 - 14 shelf numbers and will tell the child to bring certain
+books. this will teach child that if the child wants 13th book (13th element) then he has
+to go to book shelf number 12 (index number 12).

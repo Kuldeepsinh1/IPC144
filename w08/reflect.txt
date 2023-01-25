@@ -1,0 +1,30 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #8
+Full Name  : Kuldeepsinh Sandipsinh Mahida
+Student ID#: 167547215
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+Answer 1 
+instead of passing the value of whole struct we can pass the address of the object
+in the function by using this method we would not require to pass a lot of memory 
+but just the memory required to store the address of the object will be used.
+the minimum memory used to make a data type of the struct defined would be
+(6 * memory taken by double dataata type) + (3 * memory taken by integer data type)
+48 + 12 byte
+minimum 60 bytes will be required but the packaging or padding done by the software will
+add  more void spaces causing the number of bytes required to increase.
+
+Answer 2
+the members of ReportData and CatFoodInfo so what i could have done was while 
+defining the structure for ReportData we could have put CatfoodInfo as a object
+of it and it would have helped us as we would not be required to put four different
+object while defining that structure. while printing we would have to write the following
+printf("%d",ReportData.CatFoodInfo.sku); to print the value of sku asper my method.
+and would only requie us to fill the value once for both the different struct.

@@ -1,0 +1,14 @@
+In line number 94 of your output:
+The output should be:
+0012221      26.99        2.5     1.1340      1133      325     17.7    1.52 0.00469
+                                                                                  ^
+But your output is: 
+0012221      26.99        2.5     1.1340      1133      325     17.7    1.52 0.00470
+                                                                                  ^
+
+Unmatched character details:
+The character in column 83 is supposed to be:
+  [6] ASCII code(54)
+but you printed
+  [7] ASCII code(55)
+

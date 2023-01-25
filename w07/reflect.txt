@@ -1,0 +1,55 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #7
+Full Name  : Kuldeepsinh Sandipsinh Mahida
+Student ID#: 167547215
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+ANSWER 1
+user defined data types (structures) are of great use as they help us group different 
+types of data together like the struct i used in the code of workshop 7
+struct PlayerInfo // making a user defined data type PlayerInfo
+	{
+		int livecnt;
+		char plyricon;
+		int foundtreasercnt;
+		int PastEntrdPos[MAXPATHLENGTH];
+	};
+is storing character values and integer values together under a name of player object.
+hence data handling becomes easy.
+so once we define this stuct we do not need to make 4 different variables again and again
+we can just use this structure to make a data type of this specifiation like player 
+we can make many.
+
+ANSWER 2
+there are various things we can do like we can make array of this user defined data type and store 
+all the values in different index of the stucture it would be of great help because that we 
+would have a lot of variables stored under a name
+struct PlayerInfo // making a user defined data type PlayerInfo
+	{
+		int livecnt;
+		char plyricon;
+		int foundtreasercnt;
+		int PastEntrdPos[MAXPATHLENGTH];
+	};
+struct PlayerInfo player[5];// like this
+to store the result we can make other array where all the results would be stored like how 
+many treasures were found.
+
+ANSWER 3 
+the logic part of the program itself was moderate but thre was a lot of things in the program which
+we neede to take care off making it very difficult to find what thing we did where and when we want
+to make correction it becomes boring and hencce not able to concerntrate on it however if somthing needs
+to be mentioned then it was formulating the idea to print the output as
+
+       V 
+!-$-!--.-.----&----$ 
+|||||||||1|||||||||2 
+12345678901234567890
+ i used dry run method and hence it took a very long time to me to figure it out.
+ 

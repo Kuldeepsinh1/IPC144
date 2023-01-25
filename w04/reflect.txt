@@ -1,0 +1,155 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #4
+Full Name  : Kuldeepsinh Sandipsinh Mahida
+Student ID#: 167547215
+Email      : kmahida1@myseneca.ca
+Section    : NGG
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+Ans 1
+
+Selection plays a crucial role in programming for instance if we want to
+go to some lines of the code only if some conditions are met then we use
+selection's concept.
+for instance in the w4 p2 we are supposed to print 
+Pick some TOMATOES... how many did you pick? : 40 
+only if earlier the user told us that they want tomatoes by inserting value 
+above 0 so we have to use concept of selection to check if they entered
+amount of tomatoes greater than zero and return a value only if it is greater 
+than 0 or else skip whole block and move ahead.
+	example 1
+	 if (amount_of_tomatoes < 0)
+            {
+                printf("ERROR: Value must be 0 or more.");
+            }
+            else
+            {
+                flagtomatoe = 0;
+            }
+	this code is used to print error if entered value is in appropriate
+	and if not we change the flag to 0 which later will be used to exit
+	do while loop
+	example 2
+	if (pickapple > amount_of_apples)
+                {
+                    printf("You picked too many... only %d more APPLE(S) are needed.",
+		amount_of_apples);
+                }
+	we use this selection statement to check if user is picking up more apples than
+	required.
+	example 3
+	if (amount_of_pears != 0)
+                    {
+                        printf("Looks like we still need some PEARS...");
+                    }
+	this is a if statement used to tell user that more pears are yet to be picked 
+	we deduct every time we pick pears so the left pears are stored in  the same 
+	variable and keep deducting till it goes to zero which means the amount of required
+	pears are picked.
+	//amount_of_pears = amount_of_pears -pickpear; this is the deduction i was talking
+	about in above example.
+
+Ans 2
+
+A nested construct is a selection statement inside other selection statement which means 
+we will first check if the first condition, if it is staisfied then the other condition
+will be checked and then we perform our tasks.
+	example 1
+	 if (pickpear > amount_of_pears)
+                {
+                    printf("You picked too many... only %d more pear(S) are needed.", amount_of_pears);
+                }
+                else if (pickpear <= 0)
+                {
+                    printf("ERROR: You must pick at least 1!");
+                }
+                else
+                {
+                    amount_of_pears = amount_of_pears - pickpear;
+                    if (amount_of_pears != 0)
+                    {
+                        printf("Looks like we still need some PEARS...");
+                    }
+                } 
+  	 logic behind this nested construct is 
+	// pickpear is for number of pear user want to pick at a time
+	// whereas amount_of_pears stores total to be picked
+	hence we can not pick more pear than we want to buy hence we will give an 
+	error
+	then if the no. of pear user is picking is zero then it makes no sense 
+	hence we tell user to pick atleast one at a time.
+	now comes nested construct
+	where it will go in else only if both above condition are not satisfied
+ 	then we perform other selection process where if amount of pears are not 
+	zero then it means we need to pick more hence we print the above message.
+	
+	example 2
+	 if (amount_of_oranges > 0)
+        {
+            printf("\n");
+            do
+            {
+                printf("\nPick some ORANGES... how many did you pick? : ");
+                scanf("%d", &pickorange);
+                if (pickorange > amount_of_oranges)
+                {
+                    printf("You picked too many... only %d more orange(S) 
+			are needed.", amount_of_oranges);
+                }
+                else if (pickorange <= 0)
+                {
+                    printf("ERROR: You must pick at least 1!");
+                }
+                else
+                {
+                    amount_of_oranges = amount_of_oranges - pickorange;
+                    if (amount_of_oranges != 0)
+                    {
+                        printf("Looks like we still need some ORANGES...");
+                    }
+                }
+            } while (amount_of_oranges != 0);
+            printf("Great, that's the oranges done!");
+        }
+	this block is very big but the logic is very small
+	we check that did user told us to buy oranges by checking
+	if amount_of_oranges is greater than 0 (0 means we don't want to 
+	buy oranges)
+	now there are many more selection statements inside so this is also
+	a nested construct
+	all the things in the first if statement is similar to example 1
+
+Ans 3
+
+there are three different iteration constructs 
+while
+do while
+for
+all have their speciality hence all are impotant and irreplaceable by any other 
+iteration constuct
+for instance for is best if we know no. of iterations to be performed
+while and do while are used if we don't know number of iteration
+speciality of do while is that it is exit controlled loop which means it will run once
+no matter conditions are satisfied or not.
+whereas while is entry controlled and it will check the conditions first then it will
+let the block run.
+but if I have to state one I am most comfortable with, then it has to be for loop because i have 
+used it several times before and it has the highest predictability as no of iteration are 
+known.
+despite for being my favourite i have not used it in the program because the best
+suited iteration construct for the question was do while example of do while used in program is
+int flag_other_shopping = -1;
+do
+{
+}
+while(flag_other_shopping != 0);
+in the code we change the flag to zero only if user dont want to shop any more 
+and do while is best because it will run once no matter the condititons are and 
+it makes sense because if you go to shopping mall then it means you are going to shop
+atleast once.
